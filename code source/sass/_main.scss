@@ -1,0 +1,52 @@
+
+main {
+	background:$white;
+	@include pt-l;
+}
+.row {
+	display:flex;
+	justify-content:space-evenly;
+	@include mt-l;
+}
+.article {
+	flex: 0 0 44%;
+}
+.bt {
+	display: inline-block;
+	@include center;
+	vertical-align: middle;
+	a {
+		color: $white;		; 
+		display:block;
+		background-color: $dark;
+		padding: .375rem .75rem;
+		border-radius: .25rem;
+		&:hover {
+			background: lighten($dark, 20%);
+			color:darken($white, 20%);
+		}
+ 	}
+ }
+
+
+.containerVignettes {
+	@include pl;
+	@include shadow;
+}
+.vignette {
+	position: relative;
+	flex: 0 0 29%;
+}
+.vignette-figcaption {
+	position: absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	background:transparentize($white,0.3);
+	display:none;
+	columns: $secondary;
+	@include pm;
+}
+.vignette:hover .vignette-figcaption {
+	display:block;
+}

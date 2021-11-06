@@ -1,0 +1,25 @@
+body{
+	background:$secondary;
+}
+
+/*liens*/
+a {
+	text-decoration: none;
+	color: #ae2123;
+	&:hover {
+	color: #999;
+	}
+}
+
+/*images responsive*/
+
+img {
+	max-width: 100%
+}
+
+.wrapper {
+	width:95%;
+	max-width:1550px;
+	margin:0 auto;
+	background:$white;
+}

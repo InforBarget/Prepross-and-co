@@ -1,0 +1,40 @@
+.header {
+	display:flex;
+	justify-content:space-between;
+	align-items: center;
+	@include pt-l;
+
+}
+.header-title {
+	@include pr-m;
+	@include no-margin;
+}
+
+//nesting
+
+.menu{
+	
+	background: lighten($dark, 10%);
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	@include radius(1em);
+}
+.menu-item {
+	list-style: none;
+ 	a {
+		background: $dark;
+		padding: 10px 20px;
+		margin: 1px 0px;
+		display: block;
+		text-decoration: none;
+		color: lighten($dark, 80%); 
+		&:hover {
+			background: lighten($dark, 20%);
+			color: lighten($dark, 60%); 
+
+		}
+ 	}
+ }
+

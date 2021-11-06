@@ -1,0 +1,30 @@
+// mixins 
+
+@mixin center {
+	text-align:center;
+	justify-content:center;
+}
+@mixin shadow {
+	box-shadow: -1px -1px 20px 10px $secondary;
+}
+@mixin no-margin {
+	margin:0;
+}
+@mixin pr-m {
+	padding-right:1rem;
+}
+@mixin pt-l {
+	padding-top:1.5rem;
+}
+@mixin pm {
+	padding:1rem;
+}
+@mixin pl {
+	padding:1.5rem;
+}
+@mixin mt-l {
+	margin-top:1.5rem;
+}
+@mixin radius($radius) {
+	border-radius:$radius;
+} 
